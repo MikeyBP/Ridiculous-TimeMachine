@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <!--Background divs-->
+    <div class="backgroundStars"></div>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <!--Incoming comet-->
+    <div class="comet"><img class="cometImg" src="/imgs/comet.png" /></div>
+
+    <!--Cover page with embedded video-->
+	<div class="coverPage"><iframe id="video" src="https://www.youtube.com/embed/zUwY81pP21E?modestbranding=1;controls=0;showinfo=0;rel=0;fs=1;enablejsapi=1;end=32;" frameborder="0"></iframe><p id="descript"></p><img id="playButton" src="imgs/play_noEvent.png" onclick="playVideo()"/>
+
+        <!--animation div pieces-->
+	    <div class="sun"></div>
+        <div class="clouds"></div>
+	    <div class="dirt"></div>
+        <div class="backgroundDirt"></div>
+        <div class="mayanTemple"></div>
+	</div>
+
+    <!--Start Game pane-->
+    <div id="startGame"><p id="startText"></p><button type="button" id="startButton" onclick="startGame()">Let's do this...</button></div>
+
+    <!--Login info/page-->
+	<img id="policeLogo" src="imgs/police_logo.png" />
+    <input type="text" id="loginInput" placeholder="User"/>
+    <button class="logButton" type="button" id="loginButton" onclick="checkCookie()">Login</button>
+    <input type="text" id="registerInput" placeholder="User"/>
+    <button class="logButton" type="button" id="registerButton" onclick="register()">Register</button>
+
+    <script src='js/jquery-1.11.3.min.js'></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/index.js"></script>
+ 
+</body>
+
+</html>
